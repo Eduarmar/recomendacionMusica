@@ -57,7 +57,7 @@ public class CassandraConnection {
                         String nombre = nextLine[1];
                         String ciudad = nextLine[2];
 
-                        // Escapar comillas simples en los valores
+                        
                         String safeNombre = nombre.replace("'", "''");
                         String safeCiudad = ciudad.replace("'", "''");
 

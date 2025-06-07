@@ -30,13 +30,13 @@ public class MainView extends VerticalLayout {
 
         add(new H2("🎧 Recomendaciones Musicales"));
         
-        // ✅ Contenedor de botones (vertical)
+        //  Contenedor de botones (vertical)
         VerticalLayout botonesLayout = new VerticalLayout();
         botonesLayout.setPadding(false);
         botonesLayout.setSpacing(true);
         botonesLayout.getStyle().set("min-width", "220px");
 
-        // ✅ Div de resultados (al costado)
+        //  Div de resultados (al costado)
         Div resultadosDiv = new Div();
         resultadosDiv.getStyle().set("padding", "15px");
         resultadosDiv.getStyle().set("border", "1px solid #ccc");
@@ -45,7 +45,7 @@ public class MainView extends VerticalLayout {
         resultadosDiv.getStyle().set("min-width", "500px");
         resultadosDiv.getStyle().set("max-width", "600px");
 
-        // ✅ Layout horizontal: botones a la izquierda, resultados a la derecha
+        //  Layout horizontal: botones a la izquierda, resultados a la derecha
         HorizontalLayout layoutPrincipal = new HorizontalLayout(botonesLayout, resultadosDiv);
         layoutPrincipal.setAlignItems(Alignment.START);
         add(layoutPrincipal);
